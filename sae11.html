@@ -14,6 +14,7 @@
 <li><a href="index.html">Accueil</a></li>
 <li><a href="presentation.html">Présentation</a></li>
 <li><a href="sae.html">SAÉ</a></li>
+<li><a href="competences.html">Compétences</a></li>
 <li><a href="bilan.html">Bilans</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
@@ -22,18 +23,25 @@
 <section class="page">
 <h1>SAÉ 11 — Sensibilisation à l’hygiène informatique</h1>
 <div class="glass-card">
-<h2>Description</h2>
+<h2>Contexte & Objectifs</h2>
 <p>
-Cette SAÉ avait pour objectif de sensibiliser
-aux bonnes pratiques de sécurité informatique.
+<strong>Durée :</strong> 1 semaine | <strong>Contexte :</strong> Travail individuel en laboratoire pédagogique<br><br>
+Cette SAÉ m'a mise en situation d'auditeur réseau pour sensibiliser aux bonnes pratiques de sécurité. L'objectif était de cartographier, analyser et identifier les équipements d'un réseau local afin d'en détecter les vulnérabilités et les risques de sécurité. Cette démarche simule un audit de conformité ou une phase de test de pénétration (pentesting) en entreprise.
 </p>
-<h2>Compétences</h2>
+<h2>Activités Conduites</h2>
 <ul>
-<li>utilisation d'outils d'exploitation des failles</li>
-<li>Analyse des vulnérabilités</li>
-<li>Évaluation des risques</li>
+<li><strong>Reconnaissance réseau :</strong> Utilisation de commandes (arp-scan, nmap) pour cartographier les machines connectées</li>
+<li><strong>Analyse de trafic :</strong> Capture et analyse des paquets avec Wireshark pour identifier les flux réseau</li>
+<li><strong>Détection d'OS :</strong> Identification des systèmes d'exploitation cibles pour adapter les stratégies d'audit</li>
+<li><strong>Documentation :</strong> Enregistrement des résultats et rédaction d'un rapport d'audit</li>
 </ul>
-<h2>Tâches réalisées</h2>
+<h2>Compétences Mobilisées</h2>
+<ul>
+<li>Reconnaissance de réseaux et analyse de trafic</li>
+<li>Identification des vulnérabilités système</li>
+<li>Connaissance des principes de cybersécurité</li>
+</ul>
+<h2>Tâches Réalisées</h2>
 <ul>
 <li>Respect des règles de sécurité</li>
 <li>Sensibilisation utilisateur</li>
@@ -41,12 +49,32 @@ aux bonnes pratiques de sécurité informatique.
 </ul>
 <h2>Preuves</h2>
 <img src="Hygiène informatique.jpeg" class="proof">
+<P>Cette capture d'écran montre l'exécution de la commande sudo arp-scan --localnet depuis une machine virtuelle Linux (Debian Bullseye). La commande interroge le réseau pour lister les machines connectées.</P>
+<img src="Hygiène informatique2.jpeg" class="proof">
+<p>Cette diapositive présente une approche combinée : à gauche, un scan de ports furtif SYN (nmap -sS) ciblant l'IP 10.229.102.122 sous Windows ; à droite, l'analyse du trafic généré capturé dans Wireshark.</p>
+<img src="Hygiène informatique3.jpeg" class="proof">
+<p>Cette capture montre l'utilisation de la commande de détection d'OS de Nmap (nmap -O) sur trois cibles différentes pour tenter de deviner précisément leur système d'exploitation.</p>
+<h2>Acquis de Compétences (AC)</h2>
+<ul>
+<li><strong>AC11.02</strong> – Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet</li>
+<li><strong>AC11.04</strong> – Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci</li>
+<li><strong>AC11.05</strong> – Identifier les dysfonctionnements du réseau local et savoir les signaler</li>
+</ul>
 <h2>Autoévaluation</h2>
 <p>
-Cette SAÉ m’a permis de comprendre l’importance
-de la cybersécurité et des bonnes pratiques.
-J’ai appris à analyser les vulnérabilités et à
-communiquer efficacement des recommandations.
+<strong>Points forts :</strong> J'ai maîtrisé l'utilisation des outils de scan réseau (nmap, arp-scan, Wireshark) et su adapter ma démarche selon les résultats. Ma rigueur méthodologique m'a permis de produire un audit structuré et exploitable.
+</p>
+<p>
+<strong>Apprentissages clés :</strong> Cette SAÉ a validé mon intérêt pour la sécurité des réseaux. J'ai compris l'importance d'une démarche systématique en audit et la nécessité de respecter les bonnes pratiques éthiques lors des tests d'intrusion.
+</p>
+<p>
+<strong>Difficultés rencontrées :</strong> La compréhension des drapeaux TCP/IP a demandé une révision théorique. J'ai aussi dû approfondir mes connaissances en détection d'OS pour interpréter correctement les résultats.
+</p>
+<p>
+<strong>Améliorations possibles :</strong> Si je devais refaire ce projet, j'automatiserais les scans via des scripts Bash ou Python pour une détection plus rapide des machines vulnérables. Je chercherais aussi à intégrer des mesures d'atténuation des risques identifiés.
+</p>
+<p>
+<strong>Compétence renforcée :</strong> AC11.05 – Identifier les dysfonctionnements du réseau local et savoir les signaler.
 </p>
 </div>
 </section>
