@@ -458,6 +458,18 @@ body::selection {
   color: #00b4d8;
 }
 
+.glass-card a {
+  color: #70e0ff;
+  text-decoration: underline;
+  text-decoration-color: rgba(112, 224, 255, 0.56);
+  font-weight: 600;
+}
+
+.glass-card a:hover {
+  color: #00d4ff;
+  text-decoration-color: #00d4ff;
+}
+
 .proof {
   display: block;
   width: 100%;

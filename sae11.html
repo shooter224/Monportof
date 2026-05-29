@@ -49,11 +49,23 @@ Cette SAÉ m'a mise en situation d'auditeur réseau pour sensibiliser aux bonnes
 </ul>
 <h2>Preuves</h2>
 <img src="Hygiène informatique.jpeg" class="proof">
-<P>Cette capture d'écran montre l'exécution de la commande sudo arp-scan --localnet depuis une machine virtuelle Linux (Debian Bullseye). La commande interroge le réseau pour lister les machines connectées.</P>
+<br><br>
+<P>Cette capture d’écran montre l’exécution de la commande `sudo arp-scan --localnet` depuis une machine virtuelle Linux sous Debian Bullseye. Cette commande a été utilisée dans le cadre de la SAÉ consacrée à l’audit et à l’analyse de la sécurité d’un réseau local.
+
+L’objectif de cette manipulation était d’identifier les équipements connectés au réseau en utilisant le protocole ARP. L’outil `arp-scan` envoie des requêtes à l’ensemble des adresses du sous-réseau afin de détecter les machines actives et d’afficher différentes informations, notamment leur adresse IP, leur adresse MAC et parfois le constructeur de l’équipement réseau.
+
+Cette étape nous a permis de réaliser une cartographie du réseau local et de mieux visualiser les équipements présents sur l’infrastructure. Elle constitue une phase importante dans une démarche d’audit réseau ou de test de pénétration, car elle permet de repérer les appareils connectés, d’identifier d’éventuels équipements inconnus et d’évaluer certains risques de sécurité.
+
+À travers cette SAÉ, nous avons été placés dans une situation proche de celle d’un auditeur réseau chargé de sensibiliser aux bonnes pratiques de cybersécurité et d’analyser la conformité d’une infrastructure réseau.
+.</P>
 <img src="Hygiène informatique2.jpeg" class="proof">
-<p>Cette diapositive présente une approche combinée : à gauche, un scan de ports furtif SYN (nmap -sS) ciblant l'IP 10.229.102.122 sous Windows ; à droite, l'analyse du trafic généré capturé dans Wireshark.</p>
+<br><br>
+<p>Cette diapositive présente un scan de ports furtif SYN réalisé avec `nmap -sS` sur la machine `10.229.102.122` sous Windows, afin d’identifier les ports ouverts et les services actifs. À droite, Wireshark permet d’analyser le trafic réseau généré par ce scan, notamment les échanges de paquets TCP SYN. Cette approche nous a aidés à comprendre le fonctionnement des scans réseau et leur utilisation dans le cadre d’un audit de sécurité ou d’un test de pénétration.
+</p>
 <img src="Hygiène informatique3.jpeg" class="proof">
-<p>Cette capture montre l'utilisation de la commande de détection d'OS de Nmap (nmap -O) sur trois cibles différentes pour tenter de deviner précisément leur système d'exploitation.</p>
+<br><br>
+<p>Cette capture montre l’utilisation de la commande de détection d’OS de Nmap (`nmap -O`) sur trois machines différentes afin d’identifier leur système d’exploitation. Grâce à l’analyse des réponses réseau envoyées par les cibles, Nmap tente de déterminer le type d’OS utilisé ainsi que certaines informations sur les équipements détectés. Cette technique est couramment utilisée lors des phases de reconnaissance en audit réseau ou en test de pénétration pour mieux connaître l’environnement cible.
+</p>
 <h2>Acquis de Compétences (AC)</h2>
 <ul>
 <li><strong>AC11.02</strong> – Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet</li>

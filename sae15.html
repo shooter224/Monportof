@@ -28,7 +28,16 @@
             <h2>Contexte & Objectifs</h2>
             <p>
                 <strong>Durée :</strong> 2 semaines | <strong>Travail en équipe :</strong> Projet collaboratif<br><br>
-                J'ai participé à un projet de traitement et d'analyse de données pour transformer des informations brutes en insights exploitables. L'objectif était de maîtriser les phases clés du cycle de vie des données : collecte, nettoyage, structuration, analyse et présentation. Cette compétence est devenue essentielle dans tout environnement informatique moderne.
+                Description de la SAÉ 1.05 — Traitement de données (OpenStreetMap)
+
+Dans le cadre de cette SAÉ, j’ai été amené à développer en Python des outils exploitant les données de la plateforme OpenStreetMap. Le projet consistait à interagir avec différentes API (API OSM et Overpass) afin de récupérer des informations sur des points d’intérêt et des zones géographiques.
+
+Le travail était structuré en deux parties principales. La première visait à générer automatiquement des fiches descriptives d’objets OpenStreetMap à partir de leur identifiant. Ces fiches étaient produites aux formats Markdown et HTML et regroupaient des informations comme le nom, les coordonnées, les horaires ou encore les caractéristiques spécifiques des lieux.
+
+La deuxième partie portait sur l’analyse de données à plus grande échelle. Elle consistait à récupérer un ensemble d’objets situés dans une zone donnée (par exemple des restaurants ou commerces) et à produire des statistiques pertinentes sur ces données, tout en générant une restitution lisible sous forme de fichier Markdown et HTML.
+
+Ce projet m’a permis de renforcer mes compétences en Python, en manipulation de données JSON, en utilisation d’API web ainsi qu’en structuration et mise en forme de rapports techniques.
+
             </p>
             <h2>Activités Conduites</h2>
             <ul>
@@ -54,9 +63,21 @@
             </ul>
             <h2>Preuves</h2>
             <img src="sae15.jpg" class="proof" alt="Preuve SAE 15 - 1">
-            <p>Schéma ou capture montrant une étape importante du traitement des données.</p>
+            <br><br>
+            <p>Cette capture d’écran illustre l’exécution des fonctions get_dataset et compute_statistics développées dans le cadre du projet.
+
+La fonction get_dataset permet de récupérer les données depuis l’API Overpass d’OpenStreetMap à partir d’une requête en langage Overpass QL. Les informations sont ensuite stockées sous forme de structure de données Python (JSON/dictionnaire) afin de pouvoir être exploitées facilement.
+
+La fonction compute_statistics traite ensuite ce jeu de données afin d’en extraire des indicateurs pertinents. Elle permet par exemple de calculer des proportions ou de mettre en évidence certaines caractéristiques des objets présents dans la zone étudiée.
+
+Ces deux fonctions constituent une étape essentielle du projet, car elles permettent à la fois la récupération automatisée des données géographiques et leur analyse pour produire des résultats exploitables.</p>
             <img src="sae15_1.jpg" class="proof" alt="Preuve SAE 15 - 2">
-            <p>Autre preuve visuelle liée à l’analyse et au traitement des données.</p>            <h2>Acquis de Compétences (AC)</h2>
+            <br><br>
+            <p>Cette capture d’écran présente l’utilisation de la fonction dataset_to_md, qui permet de transformer le jeu de données récupéré depuis l’API Overpass en un fichier au format Markdown.
+
+Cette fonction prend en entrée les données structurées (dataset) ainsi que le nom du fichier de sortie, puis génère un document lisible contenant à la fois la liste des objets récupérés et les statistiques calculées précédemment.
+
+L’objectif est de rendre les résultats plus clairs et exploitables en les organisant sous forme de sections et de listes, avant une éventuelle conversion en HTML. Cette étape permet donc de passer d’un ensemble de données brutes à une restitution structurée et lisible.</p>            <h2>Acquis de Compétences (AC)</h2>
             <ul>
             <li><strong>AC13.02</strong> – Lire, exécuter, corriger et modifier un programme</li>
             <li><strong>AC13.03</strong> – Traduire un algorithme dans un langage et pour un environnement donné</li>
