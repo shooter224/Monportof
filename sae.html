@@ -5,30 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAÉ | Portfolio Ibrahima Diallo</title>
     <link rel="stylesheet" href="style.css">
+<meta name="description" content="Portfolio d’Ibrahima Diallo : projets de BUT Réseaux et Télécommunications, compétences, réalisations et bilan de progression.">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="logo">SAÉ</div>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="sae.html">SAÉ</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="bilan.html">Bilans</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header><nav class="navbar" aria-label="Navigation principale"><a class="logo" href="index.html"><span class="monogram">ID.</span><span>Ibrahima Diallo<small>Portfolio · BUT R&T</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button><ul id="navigation"><li><a href="index.html">Accueil</a></li><li><a href="presentation.html">Présentation</a></li><li><a href="sae.html" aria-current="page">Projets SAÉ</a></li><li><a href="competences.html">Compétences</a></li><li><a href="bilan.html">Bilan</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
 
-    <main>
+    <main id="contenu">
         <section class="section">
             <div class="section-header">
                 <h2>Toutes mes SAÉ</h2>
                 <p>Cinq projets SAÉ détaillés avec descriptions, compétences et preuves.</p>
             </div>
-            <div class="grid">
-                <article class="card">
+            <div class="project-filters" aria-label="Filtrer les projets"><button class="filter active" data-filter="all" aria-pressed="true">Tous les projets</button><button class="filter" data-filter="reseaux" aria-pressed="false">Réseaux & sécurité</button><button class="filter" data-filter="transmission" aria-pressed="false">Transmission</button><button class="filter" data-filter="developpement" aria-pressed="false">Développement</button></div><p class="filter-status" aria-live="polite">5 projets</p><div class="grid">
+                <article class="card" data-category="developpement">
                     <img src="logo-site_web.jpg" alt="SAE 14" />
                     <h3>SAÉ 14 – Se présenter sur Internet</h3>
                     <p>Création d’un site web personnel et d’un portfolio. Travail sur l’identité visuelle, la structure de contenu et l’ergonomie.</p>
@@ -41,7 +31,7 @@
                         <a href="sae14.html" class="btn">Voir les détails</a>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card" data-category="transmission">
                     <img src="logo_telecom.jpg" alt="SAE 13" />
                     <h3>SAÉ 13 – Dispositifs de Transmission</h3>
                     <p>Analyse des technologies de transmission : fibre, cuivre et ondes radio pour des réseaux performants.</p>
@@ -54,7 +44,7 @@
                         <a href="sae13.html" class="btn">Voir les détails</a>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card" data-category="reseaux">
                     <img src="logo_reseaux.jpg" alt="SAE 12" />
                     <h3>SAÉ 12 – Réseaux Informatiques</h3>
                     <p>Conception d’un réseau IP solide avec DHCP, DNS, sous-réseaux et documentation complète.</p>
@@ -67,7 +57,7 @@
                         <a href="sae12.html" class="btn">Voir les détails</a>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card" data-category="developpement">
                     <img src="sae_pres.jpg" alt="SAE 15" />
                     <h3>SAÉ 15 – Traitement de données</h3>
                     <p>Analyse et traitement des données, avec mise en forme des résultats et visualisation.</p>
@@ -80,7 +70,7 @@
                         <a href="sae15.html" class="btn">Voir les détails</a>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card" data-category="reseaux">
                     <img src="logo_hygienne.jpg" alt="SAE 11" />
                     <h3>SAÉ 11 – Hygiène informatique</h3>
                     <p>Guide des bonnes pratiques pour protéger les données, les mots de passe et le matériel informatique.</p>
@@ -97,9 +87,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Ibrahima Diallo — Portfolio BUT Réseaux & Télécom</p>
-    </footer>
+
     <script src="script.js"></script>
+<footer><a href="index.html" class="footer-name">Ibrahima Diallo<span>Réseaux & Télécommunications</span></a><p>Portfolio de formation · BUT R&T</p><a href="contact.html">Échangeons ↗</a></footer>
 </body>
 </html>
